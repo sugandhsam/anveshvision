@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anvesh Vision | Digital Signatures &amp; Corporate Gifting</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#172535">
+<!-- TODO: remove both noindex lines (and robots.txt) when real copy is in -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+font-family: 'DM Sans', sans-serif;
+background-color: #fcf9f5;
+color: #16140d;
+}
+h1, h2, h3, h4, h5, h6, .serif {
+font-family: 'Cormorant Garamond', serif;
+}
+.marquee-container {
+mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+@keyframes scroll {
+0% { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+animation: scroll 30s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+.animate-scroll { animation: none; }
+#mobile-menu { transition: none; }
+#banner-msg { transition: none; }
+}
+#banner-msg {
+display: inline-block;
+transition: opacity .35s ease;
+}
+#mobile-menu {
+opacity: 0;
+visibility: hidden;
+transform: translateY(-10px);
+transition: opacity .28s ease, transform .28s ease, visibility .28s;
+}
+#mobile-menu.is-open {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+::-webkit-scrollbar {
+width: 6px;
+}
+::-webkit-scrollbar-track {
+background: #fcf9f5;
+}
+::-webkit-scrollbar-thumb {
+background: #d8d2c5;
+}
+</style></head>
+<body class="antialiased font-normal selection:bg-[#172535] selection:text-[#fcf9f5] overflow-x-hidden">
+
+    <!-- Top Banner -->
+    <!-- Top Banner — TODO: every rotating claim below needs confirming -->
+    <div id="top-banner" class="bg-[#16140d] text-[#fcf9f5] text-[0.65rem] sm:text-xs font-normal py-3 text-center tracking-[0.15em] sm:tracking-[0.2em] uppercase px-4">
+        <span id="banner-msg">Class 3 &amp; DGFT certificates in 24 hours</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="sticky top-0 z-50 w-full px-6 md:px-16 py-6 flex justify-between items-center bg-[#fcf9f5]/90 backdrop-blur-xl border-b border-[#16140d]/10 transition-all duration-300">
+        <a href="#" class="font-serif text-lg md:text-xl font-normal tracking-[0.12em] text-[#16140d] uppercase">
+            ANVESH <span class="italic font-normal normal-case text-base">Vision</span>
+        </a>
+
+        <div class="hidden lg:flex items-center space-x-10 text-xs font-normal tracking-[0.18em] text-[#16140d] uppercase">
+            <a href="#" class="hover:opacity-60 transition-opacity relative group pb-1">
+                HOME
+                <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#172535] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#gifting" class="hover:opacity-60 transition-opacity relative group pb-1">
+                CORPORATE GIFTING
+                <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#172535] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#signatures" class="hover:opacity-60 transition-opacity relative group pb-1">
+                DSC
+                <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#172535] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#contact" class="ml-4 px-8 py-4 bg-[#16140d] text-[#fcf9f5] border border-[#16140d] hover:bg-transparent hover:text-[#16140d] transition-all duration-300">
+                Talk to Us
+            </a>
+        </div>
+
+        <button id="menu-open" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden text-[#16140d] flex items-center justify-center">
+            <iconify-icon icon="solar:hamburger-menu-linear" width="28" height="28"></iconify-icon>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] lg:hidden bg-[#fcf9f5] flex flex-col" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="flex justify-between items-center px-6 py-6 border-b border-[#16140d]/10 shrink-0">
+            <span class="font-serif text-lg font-normal tracking-[0.12em] text-[#16140d] uppercase">
+                ANVESH <span class="italic font-light normal-case text-base">Vision</span>
+            </span>
+            <button id="menu-close" type="button" aria-label="Close menu" class="text-[#16140d] flex items-center justify-center">
+                <iconify-icon icon="solar:close-circle-linear" width="28" height="28"></iconify-icon>
+            </button>
+        </div>
+
+        <nav class="flex-1 flex flex-col justify-center px-6 gap-1 overflow-y-auto py-10">
+            <a href="#" data-menu-link class="font-serif text-4xl font-light text-[#16140d] py-4 border-b border-[#16140d]/10 flex items-baseline justify-between group">
+                Home
+                <span class="text-[0.6rem] uppercase tracking-[0.22em] text-[#16140d]/40 font-sans">01</span>
+            </a>
+            <a href="#gifting" data-menu-link class="font-serif text-4xl font-light text-[#16140d] py-4 border-b border-[#16140d]/10 flex items-baseline justify-between group">
+                Corporate Gifting
+                <span class="text-[0.6rem] uppercase tracking-[0.22em] text-[#16140d]/40 font-sans">02</span>
+            </a>
+            <a href="#signatures" data-menu-link class="font-serif text-4xl font-light text-[#16140d] py-4 border-b border-[#16140d]/10 flex items-baseline justify-between group">
+                DSC
+                <span class="text-[0.6rem] uppercase tracking-[0.22em] text-[#16140d]/40 font-sans">03</span>
+            </a>
+        </nav>
+
+        <div class="px-6 pb-10 pt-6 border-t border-[#16140d]/10 shrink-0">
+            <a href="#contact" data-menu-link class="block w-full text-center px-8 py-5 bg-[#16140d] text-[#fcf9f5] text-xs font-normal tracking-[0.2em] uppercase border border-[#16140d]">
+                Talk to Us
+            </a>
+            <p class="text-[0.6rem] uppercase tracking-[0.22em] text-[#16140d]/50 text-center mt-6">
+                Corporate Gifting &nbsp;&middot;&nbsp; Digital Signatures
+            </p>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative w-full px-6 md:px-16 pt-8 md:pt-10 pb-8 md:pb-10 overflow-hidden bg-[#fcf9f5] flex flex-col min-h-[calc(100dvh-var(--chrome-h,116px))]">
+        <!-- Decorative Sand Shape -->
+        <div class="absolute top-0 right-[-12%] w-[55%] h-[115%] bg-[#d8d2c5]/30 rounded-bl-[60%] -z-10 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto w-full flex-1 flex flex-col justify-center">
+
+            <p class="text-[0.65rem] md:text-xs font-normal tracking-[0.28em] uppercase text-[#172535]">
+                Corporate Gifting &nbsp;&middot;&nbsp; Digital Signature Certificates
+            </p>
+
+            <!-- Two Verticals -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6 mt-6 md:mt-7">
+
+                <!-- Vertical 01 — Corporate Gifting -->
+                <a href="#gifting" class="group relative flex flex-col bg-[#f4eedc] border border-[#16140d]/15 p-10 md:p-12 min-h-[300px] md:min-h-[350px] hover:-translate-y-1 transition-transform duration-300 overflow-hidden">
+
+                    <span class="relative z-10 font-serif text-base text-[#16140d]/30 mb-7 block">01</span>
+
+                    <h2 class="relative z-10 font-serif text-3xl md:text-[2.75rem] font-light text-[#16140d] leading-[1.05] tracking-tight mb-5">
+                        Corporate Gifting
+                    </h2>
+
+                    <p class="relative z-10 text-[0.9375rem] text-[#16140d]/80 font-normal leading-relaxed max-w-sm flex-grow">
+                        Onboarding kits, festive hampers, client gifts &mdash; curated, branded, and shipped at scale.
+                    </p>
+
+                    <div class="relative z-10 mt-7 pt-6 border-t border-[#16140d]/10 flex items-end justify-between gap-6">
+                        <div class="flex flex-wrap gap-x-5 gap-y-2 text-[0.6rem] uppercase tracking-[0.2em] text-[#16140d]/60">
+                            <span>Curation</span>
+                            <span>Branding</span>
+                            <span>Fulfilment</span>
+                        </div>
+                        <span class="shrink-0 text-[0.7rem] uppercase tracking-[0.2em] text-[#16140d] flex items-center gap-3">
+                            Explore
+                            <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1.5 transition-transform duration-300"></iconify-icon>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Vertical 02 — Digital Signatures -->
+                <a href="#signatures" class="group relative flex flex-col bg-[#172535] border border-[#172535] p-10 md:p-12 min-h-[300px] md:min-h-[350px] hover:-translate-y-1 transition-transform duration-300 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#ced7e0]/10 to-transparent pointer-events-none"></div>
+
+                    <span class="relative z-10 font-serif text-base text-[#ced7e0]/60 mb-7 block">02</span>
+
+                    <h2 class="relative z-10 font-serif text-3xl md:text-[2.75rem] font-light text-[#fcf9f5] leading-[1.05] tracking-tight mb-5">
+                        Digital Signatures
+                    </h2>
+
+                    <p class="relative z-10 text-[0.9375rem] text-[#fcf9f5]/70 font-normal leading-relaxed max-w-sm flex-grow">
+                        Class 3 and DGFT certificates through CCA-licensed authorities. KYC handled, token at your desk.
+                    </p>
+
+                    <div class="relative z-10 mt-7 pt-6 border-t border-white/10 flex items-end justify-between gap-6">
+                        <div class="flex flex-wrap gap-x-5 gap-y-2 text-[0.6rem] uppercase tracking-[0.2em] text-[#ced7e0]/65">
+                            <span>Class 3</span>
+                            <span>DGFT</span>
+                            <span>Token Delivery</span>
+                        </div>
+                        <span class="shrink-0 text-[0.7rem] uppercase tracking-[0.2em] text-[#fcf9f5] flex items-center gap-3">
+                            Explore
+                            <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1.5 transition-transform duration-300"></iconify-icon>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Statement + CTA -->
+            <div class="mt-9 md:mt-11">
+                <div>
+                    <h1 class="font-serif text-4xl md:text-6xl lg:text-[3.75rem] text-[#16140d] leading-[1] tracking-tight font-light">
+                        Signed, sealed, <span class="italic text-[#172535]">delivered.</span>
+                    </h1>
+                    <p class="max-w-lg text-[0.9375rem] text-[#16140d]/80 font-normal leading-relaxed mt-5">
+                        Two verticals, one standard. Compliance-grade digital signatures, and corporate gifts worth keeping.
+                    </p>
+                </div>
+                <a href="#contact" class="mt-7 inline-flex items-center gap-3 px-8 py-4 bg-[#16140d] text-[#fcf9f5] text-[0.7rem] font-normal tracking-[0.2em] uppercase border border-[#16140d] hover:bg-transparent hover:text-[#16140d] transition-colors duration-300 group">
+                    Talk to Us
+                    <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform duration-300"></iconify-icon>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Trust Strip — TODO: confirm every claim below before this goes live -->
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="mt-8 md:mt-10 pt-6 border-t border-[#16140d]/10">
+                <div class="flex flex-wrap items-center gap-x-8 gap-y-3 text-[0.6rem] uppercase tracking-[0.22em] text-[#16140d]/60">
+                    <span class="flex items-center gap-2.5">
+                        <iconify-icon icon="solar:shield-check-linear" class="text-[#172535] text-sm"></iconify-icon>
+                        CCA-licensed Certifying Authorities
+                    </span>
+                    <span class="flex items-center gap-2.5">
+                        <iconify-icon icon="solar:document-text-linear" class="text-[#172535] text-sm"></iconify-icon>
+                        GST invoicing
+                    </span>
+                    <span class="flex items-center gap-2.5">
+                        <iconify-icon icon="solar:box-linear" class="text-[#172535] text-sm"></iconify-icon>
+                        Pan-India delivery
+                    </span>
+                    <span class="flex items-center gap-2.5">
+                        <iconify-icon icon="solar:headphones-round-linear" class="text-[#172535] text-sm"></iconify-icon>
+                        Dedicated account support
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- Stats Bar — TODO: all four figures are placeholders, replace before launch -->
+    <section class="border-y border-[#16140d]/10 bg-[#fcf9f5]">
+        <div class="grid grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-[#16140d]/10">
+            <div class="py-12 px-6 text-center hover:bg-[#f4eedc] transition-colors duration-300">
+                <span class="font-serif text-5xl md:text-6xl text-[#172535] font-light leading-none block">150K<span class="text-2xl md:text-3xl align-baseline ml-1">+</span></span>
+                <span class="text-xs uppercase tracking-[0.22em] text-[#16140d]/80 mt-4 block">Gifts Shipped</span>
+            </div>
+            <div class="py-12 px-6 text-center hover:bg-[#f4eedc] transition-colors duration-300">
+                <span class="font-serif text-5xl md:text-6xl text-[#172535] font-light leading-none block">12,000<span class="text-2xl md:text-3xl align-baseline ml-1">+</span></span>
+                <span class="text-xs uppercase tracking-[0.22em] text-[#16140d]/80 mt-4 block">Certificates Issued</span>
+            </div>
+            <div class="py-12 px-6 text-center hover:bg-[#f4eedc] transition-colors duration-300">
+                <span class="font-serif text-5xl md:text-6xl text-[#172535] font-light leading-none block">400<span class="text-2xl md:text-3xl align-baseline ml-1">+</span></span>
+                <span class="text-xs uppercase tracking-[0.22em] text-[#16140d]/80 mt-4 block">Corporate Clients</span>
+            </div>
+            <div class="py-12 px-6 text-center hover:bg-[#f4eedc] transition-colors duration-300">
+                <span class="font-serif text-5xl md:text-6xl text-[#172535] font-light leading-none block">24<span class="text-2xl md:text-3xl align-baseline ml-1">hrs</span></span>
+                <span class="text-xs uppercase tracking-[0.22em] text-[#16140d]/80 mt-4 block">Avg. DSC Turnaround</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Gifting -->
+    <section id="gifting" class="py-24 px-6 md:px-16 bg-[#fcf9f5]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <p class="text-xs uppercase tracking-[0.3em] text-[#172535] mb-6">Corporate Gifting</p>
+                <h2 class="font-serif text-4xl md:text-5xl font-light text-[#16140d] leading-[1.1] max-w-2xl tracking-tight">
+                    Gifts that get remembered, <em class="italic text-[#172535]">not regifted.</em>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#16140d]/10 border border-[#16140d]/10">
+                <div class="group bg-[#fcf9f5] p-12 hover:-translate-y-1 hover:bg-[#16140d] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-serif text-lg text-[#d8d2c5] group-hover:text-[#fcf9f5] transition-colors mb-8 block">01</span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">Quick Turnaround</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        Approved artwork to dispatched cartons in days, not weeks. Built for the request that lands on your desk with the deadline already attached.
+                    </p>
+                </div>
+
+                <div class="group bg-[#fcf9f5] p-12 hover:-translate-y-1 hover:bg-[#16140d] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-serif text-lg text-[#d8d2c5] group-hover:text-[#fcf9f5] transition-colors mb-8 block">02</span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">Custom &amp; Branded</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        Your logo, your palette, your packaging — laser-etched, embroidered, or foil-stamped. Nothing that looks like it came off a shelf.
+                    </p>
+                </div>
+
+                <div class="group bg-[#fcf9f5] p-12 hover:-translate-y-1 hover:bg-[#16140d] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-serif text-lg text-[#d8d2c5] group-hover:text-[#fcf9f5] transition-colors mb-8 block">03</span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">Festive Collections</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        Diwali, Holi, and regional festivals, curated ahead of the rush. We hold stock so you are not sourcing hampers in week one of October.
+                    </p>
+                </div>
+
+                <div class="group bg-[#fcf9f5] p-12 hover:-translate-y-1 hover:bg-[#16140d] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-serif text-lg text-[#d8d2c5] group-hover:text-[#fcf9f5] transition-colors mb-8 block">04</span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">Holiday &amp; Year-End</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        New Year desk sets, client thank-yous, and end-of-quarter recognition — planned against your calendar, not ours.
+                    </p>
+                </div>
+
+                <div class="group bg-[#fcf9f5] p-12 hover:-translate-y-1 hover:bg-[#16140d] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-serif text-lg text-[#d8d2c5] group-hover:text-[#fcf9f5] transition-colors mb-8 block">05</span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">Onboarding &amp; Milestones</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        Welcome kits that make day one land, plus work anniversaries and farewells handled on a standing brief.
+                    </p>
+                </div>
+
+                <a href="#contact" class="group bg-[#f4eedc] p-12 hover:-translate-y-1 hover:bg-[#16140d] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-sans text-xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-8 block leading-none">
+                        <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                    </span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">Planning a gifting round?</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        Send us the headcount, the occasion, and the budget. We will come back with three directions and honest timelines.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Signatures -->
+    <section id="signatures" class="py-24 px-6 md:px-16 bg-[#fcf9f5] border-t border-[#16140d]/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <p class="text-xs uppercase tracking-[0.3em] text-[#172535] mb-6">Digital Signatures</p>
+                <h2 class="font-serif text-4xl md:text-5xl font-light text-[#16140d] leading-[1.1] max-w-2xl tracking-tight">
+                    Certificates issued properly, <em class="italic text-[#172535]">without the runaround.</em>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#16140d]/10 border border-[#16140d]/10">
+                <div class="group bg-[#fcf9f5] p-12 hover:-translate-y-1 hover:bg-[#172535] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-serif text-lg text-[#d8d2c5] group-hover:text-[#fcf9f5] transition-colors mb-8 block">01</span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">Class 3 Certificates</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        Signing and encryption certificates for individuals and organisations — tenders, e-filing, and statutory portals covered.
+                    </p>
+                </div>
+
+                <div class="group bg-[#fcf9f5] p-12 hover:-translate-y-1 hover:bg-[#172535] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-serif text-lg text-[#d8d2c5] group-hover:text-[#fcf9f5] transition-colors mb-8 block">02</span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">DGFT Certificates</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        Export-import certificates tied to your IEC, issued for the DGFT portal without the back-and-forth on documentation.
+                    </p>
+                </div>
+
+                <div class="group bg-[#fcf9f5] p-12 hover:-translate-y-1 hover:bg-[#172535] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-serif text-lg text-[#d8d2c5] group-hover:text-[#fcf9f5] transition-colors mb-8 block">03</span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">Same-Day Issuance</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        Video KYC in the morning, certificate live the same working day. Paperwork chased by us, not by your finance team.
+                    </p>
+                </div>
+
+                <div class="group bg-[#fcf9f5] p-12 hover:-translate-y-1 hover:bg-[#172535] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-serif text-lg text-[#d8d2c5] group-hover:text-[#fcf9f5] transition-colors mb-8 block">04</span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">Bulk Enrolment</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        Ten signatories or a hundred. One point of contact, one invoice, and a register of who holds what.
+                    </p>
+                </div>
+
+                <div class="group bg-[#fcf9f5] p-12 hover:-translate-y-1 hover:bg-[#172535] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-serif text-lg text-[#d8d2c5] group-hover:text-[#fcf9f5] transition-colors mb-8 block">05</span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">Renewals &amp; Support</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        Expiry tracked before it bites, plus token drivers, reinstallation, and the calls nobody else picks up.
+                    </p>
+                </div>
+
+                <a href="#contact" class="group bg-[#f4eedc] p-12 hover:-translate-y-1 hover:bg-[#172535] transition-all duration-300 flex flex-col h-full">
+                    <span class="font-sans text-xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-8 block leading-none">
+                        <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                    </span>
+                    <h3 class="font-serif text-2xl text-[#16140d] group-hover:text-[#fcf9f5] transition-colors mb-4 font-normal">Certificate expiring soon?</h3>
+                    <p class="text-[0.9375rem] text-[#16140d]/80 group-hover:text-[#fcf9f5]/80 leading-loose transition-colors font-normal flex-grow">
+                        Tell us the type, the holder, and the deadline. We will confirm what is needed and how fast it can be done.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Gifting Range -->
+    <section id="range" class="py-24 px-6 md:px-16 border-t border-[#16140d]/10 bg-[#fcf9f5]">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
+            <div class="lg:w-1/3 lg:sticky lg:top-32 space-y-8">
+                <p class="text-xs uppercase tracking-[0.3em] text-[#172535]">Selected Range</p>
+                <h2 class="font-serif text-4xl md:text-5xl font-light text-[#16140d] leading-[1.1] tracking-tight">
+                    Made to be <em class="italic text-[#172535]">used</em>, not stored.
+                </h2>
+                <p class="text-[0.9375rem] text-[#16140d]/80 font-normal leading-loose">
+                    Every piece below is branded in-house and quoted per finish, so you can see exactly what your logo will look like before a single unit is made. Mix categories across one order &mdash; minimums apply per item, not per invoice.
+                </p>
+                <a href="#contact" class="inline-block px-9 py-5 bg-[#16140d] text-[#fcf9f5] text-xs font-normal tracking-[0.2em] uppercase border border-[#16140d] hover:bg-transparent hover:text-[#16140d] transition-all duration-300 w-full sm:w-auto text-center mt-6">
+                    Talk to Us
+                </a>
+            </div>
+
+            <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-px bg-[#16140d]/10 border border-[#16140d]/10">
+
+                <!-- Gift 1 — Drinkware -->
+                <div class="group bg-[#fcf9f5]">
+                    <div class="aspect-[4/3] bg-gradient-to-br from-[#172535] to-[#0d1a26] flex items-center justify-center relative overflow-hidden">
+                        <iconify-icon icon="solar:cup-hot-linear" class="text-[#fcf9f5]/70 text-7xl transition-transform duration-700 group-hover:scale-110"></iconify-icon>
+                        <span class="absolute bottom-5 left-6 font-sans text-[0.6rem] uppercase tracking-[0.28em] text-white/35">MOQ 50</span>
+                    </div>
+                    <div class="p-8 border-t border-[#16140d]/10">
+                        <p class="text-[0.6rem] uppercase tracking-[0.25em] text-[#172535] mb-3">Everyday Carry</p>
+                        <h3 class="font-serif text-2xl font-normal text-[#16140d] mb-4">Insulated Drinkware</h3>
+                        <p class="text-[0.9375rem] text-[#16140d]/65 font-normal leading-loose mb-6">
+                            Vacuum bottles and desk tumblers in matte or brushed steel. The gift that stays visible in every meeting for the next three years.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[0.6rem] uppercase tracking-[0.18em] text-[#16140d]/65 border-[#16140d]/15 border px-2.5 py-1">Laser Etch</span>
+                            <span class="text-[0.6rem] uppercase tracking-[0.18em] text-[#16140d]/65 border-[#16140d]/15 border px-2.5 py-1">UV Print</span>
+                            <span class="text-[0.6rem] uppercase tracking-[0.18em] text-[#16140d]/65 border-[#16140d]/15 border px-2.5 py-1">Powder Coat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gift 2 — Leather Desk -->
+                <div class="group bg-[#fcf9f5]">
+                    <div class="aspect-[4/3] bg-gradient-to-br from-[#d8d2c5] to-[#c2bba8] flex items-center justify-center relative overflow-hidden">
+                        <iconify-icon icon="solar:notebook-minimalistic-linear" class="text-[#16140d]/65 text-7xl transition-transform duration-700 group-hover:scale-110"></iconify-icon>
+                        <span class="absolute bottom-5 left-6 font-sans text-[0.6rem] uppercase tracking-[0.28em] text-[#16140d]/50">MOQ 25</span>
+                    </div>
+                    <div class="p-8 border-t border-[#16140d]/10">
+                        <p class="text-[0.6rem] uppercase tracking-[0.25em] text-[#172535] mb-3">Desk &amp; Stationery</p>
+                        <h3 class="font-serif text-2xl font-normal text-[#16140d] mb-4">Leather Desk Sets</h3>
+                        <p class="text-[0.9375rem] text-[#16140d]/65 font-normal leading-loose mb-6">
+                            Full-grain journals, card holders, and cable folios. Where a debossed logo reads as considered rather than corporate.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[0.6rem] uppercase tracking-[0.18em] text-[#16140d]/65 border-[#16140d]/15 border px-2.5 py-1">Deboss</span>
+                            <span class="text-[0.6rem] uppercase tracking-[0.18em] text-[#16140d]/65 border-[#16140d]/15 border px-2.5 py-1">Foil Stamp</span>
+                            <span class="text-[0.6rem] uppercase tracking-[0.18em] text-[#16140d]/65 border-[#16140d]/15 border px-2.5 py-1">Edge Paint</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gift 3 — Kits, with variation tiers -->
+                <div class="group bg-[#fcf9f5] md:col-span-2">
+                    <div class="aspect-video md:aspect-[21/9] bg-gradient-to-br from-[#1a2c2a] to-[#0d1615] flex items-center justify-center relative overflow-hidden">
+                        <iconify-icon icon="solar:box-minimalistic-linear" class="text-[#fcf9f5]/70 text-8xl transition-transform duration-700 group-hover:scale-110"></iconify-icon>
+                        <span class="absolute bottom-5 left-6 md:left-10 font-sans text-[0.6rem] uppercase tracking-[0.28em] text-white/35">Four tiers &middot; MOQ 20</span>
+                    </div>
+                    <div class="p-8 md:p-10 border-t border-[#16140d]/10">
+                        <p class="text-[0.6rem] uppercase tracking-[0.25em] text-[#172535] mb-3">Curated Kits</p>
+                        <h3 class="font-serif text-3xl font-normal text-[#16140d] mb-4">Onboarding &amp; Recognition Kits</h3>
+                        <p class="text-[0.9375rem] text-[#16140d]/65 font-normal leading-loose max-w-2xl mb-10">
+                            One box, four price points. Pick the tier that matches the occasion &mdash; the packaging and insert card stay consistent across all of them, so a new joiner and a board member receive something that clearly came from the same company.
+                        </p>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-px bg-[#16140d]/10 border border-[#16140d]/10">
+                            <div class="bg-[#fcf9f5] p-6 hover:bg-[#f4eedc] transition-colors duration-300">
+                                <span class="font-serif text-lg text-[#172535] font-light block mb-3">Starter</span>
+                                <p class="text-[0.75rem] text-[#16140d]/65 font-normal leading-relaxed">Tumbler, notebook, enamel pin, welcome card.</p>
+                            </div>
+                            <div class="bg-[#fcf9f5] p-6 hover:bg-[#f4eedc] transition-colors duration-300">
+                                <span class="font-serif text-lg text-[#172535] font-light block mb-3">Premium</span>
+                                <p class="text-[0.75rem] text-[#16140d]/65 font-normal leading-relaxed">Leather folio, insulated bottle, gourmet snack box.</p>
+                            </div>
+                            <div class="bg-[#fcf9f5] p-6 hover:bg-[#f4eedc] transition-colors duration-300">
+                                <span class="font-serif text-lg text-[#172535] font-light block mb-3">Leadership</span>
+                                <p class="text-[0.75rem] text-[#16140d]/65 font-normal leading-relaxed">Full-grain briefcase insert, pen set, engraved plate.</p>
+                            </div>
+                            <div class="bg-[#fcf9f5] p-6 hover:bg-[#f4eedc] transition-colors duration-300">
+                                <span class="font-serif text-lg text-[#172535] font-light block mb-3">Remote</span>
+                                <p class="text-[0.75rem] text-[#16140d]/65 font-normal leading-relaxed">Desk mat, wireless charger, mug, shipped to home.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos — TODO: placeholder wordmarks, swap for real logo SVGs -->
+    <section class="py-16 md:py-20 border-t border-[#16140d]/10 bg-[#fcf9f5] overflow-hidden">
+        <p class="text-[0.65rem] uppercase tracking-[0.3em] text-[#16140d]/55 text-center mb-12 px-6">
+            Trusted by teams at
+        </p>
+        <div class="marquee-container w-full overflow-hidden">
+            <div class="flex w-max animate-scroll group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Northwind</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Kavach Labs</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Meridian Group</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Sundara Retail</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Orbit Fintech</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Halcyon Health</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Trivium Steel</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Ashwin & Co.</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Northwind</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Kavach Labs</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Meridian Group</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Sundara Retail</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Orbit Fintech</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Halcyon Health</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Trivium Steel</span>
+                <span class="font-serif text-2xl md:text-3xl font-light text-[#16140d]/35 hover:text-[#16140d]/70 transition-colors duration-300 whitespace-nowrap px-10 md:px-14">Ashwin & Co.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#16140d] pt-24 pb-10 px-6 md:px-16 text-[#fcf9f5]">
+        <div class="max-w-7xl mx-auto border-b border-white/10 pb-16 mb-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- Brand Col -->
+                <div class="lg:col-span-6 space-y-6">
+                    <a href="#" class="font-serif text-xl md:text-2xl font-normal tracking-[0.12em] text-[#fcf9f5] uppercase block">
+                        ANVESH <span class="italic font-normal normal-case text-lg">Vision</span>
+                    </a>
+                    <p class="text-[0.9375rem] text-[#fcf9f5]/70 font-normal leading-loose max-w-sm">
+                        Corporate gifting and digital signature certificates, run as two proper businesses under one roof.
+                    </p>
+                    <div class="pt-6">
+                        <a href="#contact" class="inline-block px-9 py-5 bg-[#fcf9f5] text-[#16140d] text-xs font-normal tracking-[0.2em] uppercase border border-[#fcf9f5] hover:bg-transparent hover:text-[#fcf9f5] transition-all duration-300">
+                            Talk to Us
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation Col -->
+                <div class="lg:col-span-3 lg:col-start-10">
+                    <h4 class="text-[0.65rem] uppercase tracking-[0.25em] text-[#ced7e0] mb-8">Navigation</h4>
+                    <ul class="space-y-4 text-[0.9375rem] font-normal">
+                        <li><a href="#" class="text-[#fcf9f5]/70 hover:text-[#fcf9f5] transition-colors">Home</a></li>
+                        <li><a href="#gifting" class="text-[#fcf9f5]/70 hover:text-[#fcf9f5] transition-colors">Corporate Gifting</a></li>
+                        <li><a href="#signatures" class="text-[#fcf9f5]/70 hover:text-[#fcf9f5] transition-colors">DSC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-xs text-[#fcf9f5]/45 font-normal">
+                &copy; 2026 Anveshvision. All rights reserved.
+            </p>
+            <div class="flex space-x-8">
+                <a href="#" class="text-[0.65rem] uppercase tracking-[0.18em] text-[#fcf9f5]/55 hover:text-[#fcf9f5] transition-colors">Instagram</a>
+                <a href="#" class="text-[0.65rem] uppercase tracking-[0.18em] text-[#fcf9f5]/55 hover:text-[#fcf9f5] transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+
+    // Top banner rotates between the two verticals.
+    (function () {
+        var el = document.getElementById('banner-msg');
+        var banner = document.getElementById('top-banner');
+        if (!el || !banner) return;
+
+        var MESSAGES = [
+            'Class 3 &amp; DGFT certificates in 24 hours',
+            'Diwali gifting slots now open',
+            'Bulk DSC enrolment for 10\u2013500 signatories',
+            'Onboarding kits shipped pan-India'
+        ];
+        var HOLD = 4200, FADE = 350;
+        var i = 0, paused = false, timer = null;
+
+        // Auto-rotating text is motion; honour the OS setting and show one message.
+        var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduced) return;
+
+        function step() {
+            if (paused) return;
+            el.style.opacity = '0';
+            setTimeout(function () {
+                i = (i + 1) % MESSAGES.length;
+                el.innerHTML = MESSAGES[i];
+                el.style.opacity = '1';
+                // A longer message can wrap to two lines on a phone, changing
+                // the banner height the hero sizes itself against.
+                window.dispatchEvent(new Event('resize'));
+            }, FADE);
+        }
+
+        timer = setInterval(step, HOLD);
+
+        // WCAG 2.2.2 — moving content must be pausable.
+        ['mouseenter', 'focusin', 'touchstart'].forEach(function (ev) {
+            banner.addEventListener(ev, function () { paused = true; }, { passive: true });
+        });
+        ['mouseleave', 'focusout'].forEach(function (ev) {
+            banner.addEventListener(ev, function () { paused = false; }, { passive: true });
+        });
+        document.addEventListener('visibilitychange', function () {
+            paused = document.hidden;
+        });
+    })();
+
+    // Mobile menu: the hamburger was decorative until now.
+    (function () {
+        var menu = document.getElementById('mobile-menu');
+        var openBtn = document.getElementById('menu-open');
+        var closeBtn = document.getElementById('menu-close');
+        if (!menu || !openBtn || !closeBtn) return;
+
+        function open() {
+            menu.classList.add('is-open');
+            openBtn.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+            closeBtn.focus();
+        }
+        function close() {
+            menu.classList.remove('is-open');
+            openBtn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+            openBtn.focus();
+        }
+
+        openBtn.addEventListener('click', open);
+        closeBtn.addEventListener('click', close);
+
+        // Anchor links must close the panel, or the jump lands behind it.
+        menu.querySelectorAll('[data-menu-link]').forEach(function (link) {
+            link.addEventListener('click', close);
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && menu.classList.contains('is-open')) close();
+        });
+
+        // Rotating to landscape can cross the lg breakpoint while open,
+        // which would leave the body scroll-locked with no visible panel.
+        window.addEventListener('resize', function () {
+            if (window.innerWidth >= 1024 && menu.classList.contains('is-open')) close();
+        });
+    })();
+    // Hero fills the viewport minus the banner + nav, so the stats bar
+    // lands exactly at the fold. Measured rather than hard-coded, since
+    // both change height across breakpoints.
+    (function () {
+        var root = document.documentElement;
+        function setChromeHeight() {
+            var banner = document.getElementById('top-banner');
+            var nav = document.getElementById('main-nav');
+            var h = (banner ? banner.offsetHeight : 0) + (nav ? nav.offsetHeight : 0);
+            root.style.setProperty('--chrome-h', h + 'px');
+        }
+        setChromeHeight();
+        window.addEventListener('resize', setChromeHeight);
+        window.addEventListener('load', setChromeHeight);
+    })();
+</script>
+</body>
+</html>
