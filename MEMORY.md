@@ -12,7 +12,10 @@ Marketing site for Anveshvision: an agency with two verticals —
 - **Testing:** none
 - **Icons:** Iconify web component (`iconify-icon`), `solar:*` set
 - **Fonts:** Cormorant Garamond (display) + DM Sans (body), Google Fonts
-- **Hosting:** GitHub Pages — https://sugandhsam.github.io/anveshvision/
+- **Hosting:** GitHub Pages — https://anveshvision.com (custom domain via `CNAME` file;
+  old `sugandhsam.github.io/anveshvision/` URL 301s here). DNS at GoDaddy
+  (`ns07/ns08.domaincontrol.com`): 4× GitHub A records, `www` CNAME →
+  `sugandhsam.github.io`, Zoho MX ×3 + SPF, `_dmarc` p=none until DKIM is added.
 - **Repo:** github.com/sugandhsam/anveshvision (public, `main`)
 
 ## Invariants
@@ -125,5 +128,22 @@ Anveshvision two-vertical site, then shipping it to GitHub Pages.
 - Leather Desk Sets card: icon swapped for `assets/leather-desk-set.webp`.
 - MEMORY.md / ERRORS.md first committed to the repo.
 
-**Next priorities:** real photos for the other range cards, real copy/figures
-so `noindex` + `robots.txt` can come off.
+- Custom domain: GoDaddy nameservers switched from quicns → domaincontrol,
+  zone rebuilt (GitHub A ×4, www CNAME, Zoho MX ×3, SPF, google-site-verification,
+  `_dmarc` set to p=none). Pages `cname` set via API (GitHub committed `CNAME`),
+  HTTPS enforced. https://anveshvision.com live and verified.
+
+**Decisions:**
+- DKIM for Zoho skipped for now (Sam's call: not necessary, revisit if mail
+  lands in spam). `_dmarc` stays p=none until DKIM exists.
+- Commits on `main` still go through Sam's `!` prefix with `--no-verify`
+  (see ERRORS.md). Agent writes the message to scratchpad, Sam runs one line.
+
+**In progress:** nothing mid-flight. MEMORY.md hosting line updated locally,
+uncommitted.
+
+**Next priorities:**
+1. Real copy + figures → lift `noindex` / `robots.txt`.
+2. Photos for remaining range cards (drinkware, kits, DSC) → `assets/` 4:3 WebP.
+3. Instagram / LinkedIn footer links (currently `#`) — get URLs or remove.
+4. Tailwind off CDN (logged decision).
